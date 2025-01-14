@@ -33,6 +33,7 @@ nav a:hover {
 
 .container {
     padding: 2em;
+    align-items: center;
 }
 
 #bigheader {
@@ -50,8 +51,4 @@ button {
 
 button:hover {
     background: #0056b3;
-}
-
-ul {
-    text-align: center;
 }

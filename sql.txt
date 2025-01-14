@@ -1,0 +1,11 @@
+-- Create the database
+CREATE DATABASE item_manager;
+
+-- Select the database
+USE item_manager;
+
+-- Create the table with a column named 'name'
+CREATE TABLE items (
+    id INT AUTO_INCREMENT PRIMARY KEY, -- Optional: adds a unique ID column
+    name VARCHAR(255) NOT NULL         -- 'name' column to store item names
+);
