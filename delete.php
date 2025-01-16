@@ -18,7 +18,7 @@ $result = $conn->query("SELECT * FROM items");
     <h1>Delete Items</h1>
 </header>
 <nav>
-    <a href="index.php">Home</a>
+    <a href="index.html">Home</a>
     <a href="view.php">View Items</a>
     <a href="add.php">Add Items</a>
     <a href="edit.php">Edit Items</a>
