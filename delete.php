@@ -2,8 +2,15 @@
 include 'connection.php';
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $id = $_POST['id'];
-    $conn->query("DELETE FROM items WHERE id=$id");
-    header('Location: view.php');
+    $name = $_POST['name'];
+    $conn->query("UPDATE items SET name='$name' WHERE id=$id");
+
+    // Use JavaScript alert to show a message before redirecting
+    echo "<script>
+        alert('Delete successfully! Redirecting to view page.');
+        window.location.href = 'view.php';
+    </script>";
+    exit; // Stop further execution after sending headers
 }
 $result = $conn->query("SELECT * FROM items");
 ?>
