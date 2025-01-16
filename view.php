@@ -13,7 +13,7 @@ $result = $conn->query("SELECT * FROM items");
     <h1>View Items</h1>
 </header>
 <nav>
-    <a href="index.php">Home</a>
+    <a href="index.html">Home</a>
     <a href="view.php">View Items</a>
     <a href="add.php">Add Items</a>
     <a href="edit.php">Edit Items</a>
@@ -21,11 +21,22 @@ $result = $conn->query("SELECT * FROM items");
 </nav>
 <div class="container">
     <h1>View Items List</h1>
-    <ul>
-        <?php while($row = $result->fetch_assoc()) { ?>
-            <li><?php echo $row['name']; ?></li>
-        <?php } ?>
-    </ul>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php while($row = $result->fetch_assoc()) { ?>
+                <tr>
+                    <td><?php echo $row['id']; ?></td>
+                    <td><?php echo $row['name']; ?></td>
+                </tr>
+            <?php } ?>
+        </tbody>
+    </table>
 </div>
 </body>
 </html>
