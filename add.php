@@ -3,9 +3,7 @@ include 'connection.php';
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $id = $_POST['id'];
     $name = $_POST['name'];
-    $conn->query("UPDATE items SET name='$name' WHERE id=$id");
-
-    // Use JavaScript alert to show a message before redirecting
+    $conn->query("INSERT INTO items (name) VALUES ('$name')");
     echo "<script>
         alert('Added successfully! Redirecting to view page.');
         window.location.href = 'view.php';
