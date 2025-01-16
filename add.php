@@ -17,7 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <h1>Add Items</h1>
 </header>
 <nav>
-    <a href="index.php">Home</a>
+    <a href="index.html">Home</a>
     <a href="view.php">View Items</a>
     <a href="add.php">Add Items</a>
     <a href="edit.php">Edit Items</a>
