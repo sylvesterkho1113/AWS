@@ -2,9 +2,7 @@
 include 'connection.php';
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $id = $_POST['id'];
-    $name = $_POST['name'];
-    $conn->query("UPDATE items SET name='$name' WHERE id=$id");
-
+    $conn->query("DELETE FROM items WHERE id=$id");
     // Use JavaScript alert to show a message before redirecting
     echo "<script>
         alert('Delete successfully! Redirecting to view page.');
@@ -45,3 +43,5 @@ $result = $conn->query("SELECT * FROM items");
 </div>
 </body>
 </html>
+
+
