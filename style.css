@@ -34,6 +34,11 @@ nav a:hover {
 .container {
     padding: 2em;
     align-items: center;
+
+    width: 80%; /* Adjust the container width */
+    margin: 0 auto; /* Center the container */
+    padding-left: 20px; /* Add padding to the left */
+    padding-right: 20px; /* Add padding to the right */
 }
 
 #bigheader {
@@ -51,4 +56,11 @@ button {
 
 button:hover {
     background: #0056b3;
+}
+
+table {
+    width: 100%; /* Make the table take the full width of the container */
+    margin-top: 20px;
+    border-collapse: collapse; /* Combine table borders */
+    text-align: center;
 }
