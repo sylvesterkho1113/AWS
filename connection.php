@@ -1,6 +1,6 @@
 <?php
 // Connection to the database
-$servername = "localhost";
+$servername = "Endpoint";
 $username = "admin";
 $password = "admin123";
 $dbname = "item_manager";
