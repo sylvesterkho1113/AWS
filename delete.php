@@ -10,7 +10,7 @@ $result = $conn->query("SELECT * FROM items");
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Delete Items</title>
+    <title>Welcome to KSST Item Manager</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
